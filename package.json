@@ -4,7 +4,9 @@
   "description": "Web Application",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.pug"
+    "clean": "rimraf dist .cache",
+    "start": "parcel src/view/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/t--takai/web-app.git",
   "author": "Tomonari Takai <takai01010100@gmail.com>",
@@ -12,9 +14,13 @@
   "devDependencies": {
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.6",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "atom": "^1.1.0",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.16",
+    "yakuhanjp": "^3.0.0"
   }
 }
