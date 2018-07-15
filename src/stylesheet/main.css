@@ -10,6 +10,7 @@
  * normalize,mixin,framework,variables
  */
 
+@import '../../node_modules/bourbon/core/_bourbon.scss';
 @import '../../node_modules/normalize.css/normalize.css';
 
 /* ───────────────────────────────────────────────────────────
@@ -19,6 +20,7 @@
  *   They can’t be broken down further without losing their meaning.
  */
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import '../../node_modules/yakuhanjp/dist/css/yakuhanjp.css';
 @import './atom/common.scss';
 

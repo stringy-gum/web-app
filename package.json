@@ -7,10 +7,20 @@
     "clean:public": "rimraf docs",
     "clean": "rimraf dist .cache docs",
     "parcel": "parcel",
-    "start": "parcel src/view/index.pug",
-    "build": "yarn clean:public && parcel build src/view/index.pug -d docs  --public-url ./",
+    "start": "parcel src/view/index.pug --open",
+    "build": "parcel build src/view/index.pug --no-source-maps --no-cache -d docs --public-url ./",
+    "prebuild": "yarn clean:public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines.browsers": [
+    "> 10% in JP",
+    "last 2 versions",
+    "last 2 major versions",
+    "not < 5%",
+    "ie >= 11",
+    "Firefox ESR",
+    "last 3 Edge major versions"
+  ],
   "repository": "https://github.com/t--takai/web-app.git",
   "author": "Tomonari Takai <takai01010100@gmail.com>",
   "license": "MIT",
@@ -21,7 +31,8 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "atom": "^1.1.0",
+    "bourbon": "^5.0.1",
+    "feather-icons": "^4.7.3",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.16",
     "yakuhanjp": "^3.0.0"
