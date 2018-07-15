@@ -4,8 +4,11 @@
   "description": "Web Application",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist .cache",
+    "clean:public": "rimraf docs",
+    "clean": "rimraf dist .cache docs",
+    "parcel": "parcel",
     "start": "parcel src/view/index.pug",
+    "build": "yarn clean:public && parcel build src/view/index.pug -d docs  --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/t--takai/web-app.git",
