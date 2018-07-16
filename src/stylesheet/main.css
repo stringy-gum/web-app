@@ -1,8 +1,6 @@
 /* ───────────────────────────────────────────────────────────
  * file: main.css
- * desc: manage imports
- *   Atomic Design Methodology
- *   http://atomicdesign.bradfrost.com/chapter-2/
+ * desc: manage CSS imports
  */
 
 /* ───────────────────────────────────────────────────────────
@@ -10,36 +8,9 @@
  * normalize,mixin,framework,variables
  */
 
-@import '../../node_modules/bourbon/core/_bourbon.scss';
 @import '../../node_modules/normalize.css/normalize.css';
-
-/* ───────────────────────────────────────────────────────────
- * Import-Level: 2 ★★☆☆☆
- * Fontface,common,Icon,Label,Button,Text,Title
- * Atomic-Design: Atoms
- *   They can’t be broken down further without losing their meaning.
- */
-
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import '../../node_modules/yakuhanjp/dist/css/yakuhanjp.css';
-@import './atom/common.scss';
 
-/* ───────────────────────────────────────────────────────────
- * Import-Level: 3 ★★★☆☆
- * searchForm,decoratedButton
- * Atomic-Design: Molecules
- *   Molecules are groups of two or more atoms held together by chemical bonds.
- */
+@import './style.scss';
 
-/* ───────────────────────────────────────────────────────────
- * Import-Level: 4 ★★★★☆
- * Header,Footer,Menu
- * Atomic-Design: Organisms
- *   Organisms are assemblies of molecules functioning together as a unit.
- */
-
-/* ───────────────────────────────────────────────────────────
- * Import-Level: 5 ★★★★★
- * uniqueStyles,Inbox
- * Atomic-Design: -
- */

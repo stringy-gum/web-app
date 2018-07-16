@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean:public": "rimraf docs",
-    "clean": "rimraf dist .cache docs",
+    "clean": "rimraf dist .cache",
     "parcel": "parcel",
     "start": "parcel src/view/index.pug --open",
     "build": "parcel build src/view/index.pug --no-source-maps --no-cache -d docs --public-url ./",

@@ -1,0 +1,62 @@
+// ────────────────────────────────────────────────
+// file: footer.scss
+// ────────────────────────────────────────────────
+
+.footer {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 4rem 3rem 5rem;
+  background-color: $color-main;
+  box-sizing: border-box;
+}
+
+.author {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #FFF;
+  dt {
+    width: 100%;
+    text-align: center;
+  }
+  dd {
+    margin: 1rem 1rem 0;
+  }
+  a {
+    color: #FFF;
+    &:hover,
+    &:active,
+    &:visited {
+      color: #FFF;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+%_link-hasIcon {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.5em;
+  height: 1em;
+  line-height: 1em;
+  svg {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+
+.author__github {
+  @extend %_link-hasIcon;
+}
+.author__twitter {
+  @extend %_link-hasIcon;
+}
