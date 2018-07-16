@@ -3,12 +3,19 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title ここにタイトル
+    title Vue + Vuex + PARCEL
     meta(name="description" content="")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     link(rel="stylesheet" type="text/css" href="../stylesheet/main.css")
   body
     include include/block/header.pug
-    main
-      h1 Title タイトル（題名）
+    main.box
+      h1 Vue + Vuex + PARCEL
+      #app
     include include/block/footer.pug
+
+  script(src="../javascript/main.js")
+  script(src="../javascript/include/store.js")
+  script(src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
+  script(type='text/javascript').
+    feather.replace()
